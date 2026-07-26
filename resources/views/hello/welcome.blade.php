@@ -1,0 +1,3 @@
+<div>
+    {{ $name }} {{ $surname }}
+</div>
