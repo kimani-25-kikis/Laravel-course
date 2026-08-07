@@ -1,10 +1,11 @@
-@extends('layouts.clean', ['cssClass' => 'page-signup'])
+  @extends('layouts.clean', ['cssClass' => 'page-login'])
 
-@section('title', 'Signup')
+  @section('title', 'login')
 
-@section('childContent')
-
-<main>
+  @section('childContent')
+  
+  
+  <main>
       <div class="container-small page-login">
         <div class="flex" style="gap: 5rem">
           <div class="auth-page-form">
@@ -13,7 +14,7 @@
                 <img src="/img/logoipsum-265.svg" alt="" />
               </a>
             </div>
-            <h1 class="auth-page-title">Signup</h1>
+            <h1 class="auth-page-title">Login</h1>
 
             <form action="" method="post">
               <div class="form-group">
@@ -22,20 +23,13 @@
               <div class="form-group">
                 <input type="password" placeholder="Your Password" />
               </div>
-              <div class="form-group">
-                <input type="password" placeholder="Repeat Password" />
+              <div class="text-right mb-medium">
+                <a href="/password-reset.html" class="auth-page-password-reset"
+                  >Reset Password</a
+                >
               </div>
-              <hr />
-              <div class="form-group">
-                <input type="text" placeholder="First Name" />
-              </div>
-              <div class="form-group">
-                <input type="text" placeholder="Last Name" />
-              </div>
-              <div class="form-group">
-                <input type="text" placeholder="Phone" />
-              </div>
-              <button class="btn btn-primary btn-login w-full">Register</button>
+
+              <button class="btn btn-primary btn-login w-full">Login</button>
 
               <div class="grid grid-cols-2 gap-1 social-auth-buttons">
                 <button
@@ -52,8 +46,8 @@
                 </button>
               </div>
               <div class="login-text-dont-have-account">
-                Already have an account? -
-                <a href="/login.html"> Click here to login </a>
+                Don't have an account? -
+                <a href="/signup.html"> Click here to create one</a>
               </div>
             </form>
           </div>
@@ -63,3 +57,4 @@
         </div>
       </div>
     </main>
+  @endsection
