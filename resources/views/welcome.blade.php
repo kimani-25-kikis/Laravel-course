@@ -1,13 +1,6 @@
-@extends('layouts.app')
+<x-app-layout  >
 
-@section('title', 'Home page')
-
-@section('content')
-    <x-card color = "red">
-        <x-slot: title>Card title 1</x-slot:>
-        Card Content
-        <x-slot: footer>Card footer 1</x-slot:>
-    </x-card>
+ 
      <!-- Home Slider -->
     <section class="hero-slider">
       <!-- Carousel wrapper -->
@@ -97,7 +90,8 @@
     </section>
     <!--/ Home Slider -->
 
-      <main>
+  
+     <main>
         <x-search-form />
 
       <!-- New Cars -->
@@ -665,8 +659,12 @@
       </section>
       <!--/ New Cars -->
     </main>
-    @section('footerLinks')
+     @section('footerLinks')
         <a href ="#">Link 3</a>
         <a href ="#">Link 4</a>
     @endsection
-@endsection
+
+</x-app-layout>
+
+   
+   
